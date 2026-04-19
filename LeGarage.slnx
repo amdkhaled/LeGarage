@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="LeGarage.Application/LeGarage.Application.csproj" />
+  </Folder>
+  <Folder Name="/Core/">
+    <Project Path="LeGarage.Core/LeGarage.Core.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="LeGarage.Infra/LeGarage.Infra.csproj" />
+  </Folder>
+  <Folder Name="/Ui/">
+    <Project Path="LeGarage.Api/LeGarage.Api.csproj" />
+  </Folder>
+</Solution>
