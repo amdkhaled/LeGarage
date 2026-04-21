@@ -16,5 +16,6 @@ namespace LeGarage.Core.Entities
         public required string FuelType { get; set; }
         public required string TransmissionType { get; set; }
         public Client? Client { get; set; }
+        public List<WorkOrder> WorkOrders { get; set; } = new List<WorkOrder>();
     }
 }

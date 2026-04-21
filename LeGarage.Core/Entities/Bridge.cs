@@ -8,5 +8,6 @@ namespace LeGarage.Core.Entities
         public required string Name { get; set; }
         public required int CapacityKg { get; set; }
         public bool IsAvailable { get; set; }
+        public List<Task> Tasks { get; set; } = new List<Task>();
     }
 }
