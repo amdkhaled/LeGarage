@@ -1,0 +1,12 @@
+﻿using LeGarage.Core.Common;
+
+namespace LeGarage.Core.Entities
+{
+    public class ProvidedServiceCategory : BaseEntity
+    {
+        public required string Name { get; set; }
+        public required string Code { get; set; }
+        public string? Description { get; set; }
+        public List<ProvidedService> ProvidedServices { get; set; } = new List<ProvidedService>();
+    }
+}

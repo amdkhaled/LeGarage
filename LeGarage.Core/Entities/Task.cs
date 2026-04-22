@@ -9,6 +9,8 @@ namespace LeGarage.Core.Entities
         public int WorkOrderId { get; set; }
         [ForeignKey("Bridge")]
         public int BridgeId { get; set; }
+        [ForeignKey("ProvidedService")]
+        public int ProvidedServiceId { get; set; }
         public string? Description { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime Endtime { get; set; }
@@ -18,5 +20,8 @@ namespace LeGarage.Core.Entities
         public Decimal TaskTotalCost { get; set; }
         public WorkOrder? WorkOrder { get; set; }
         public Bridge? Bridge { get; set; }
+        public List<PauseRecord> PauseRecords { get; set; } = new List<PauseRecord>();
+        public ProvidedService? ProvidedService { get; set; }
+
     }
 }
