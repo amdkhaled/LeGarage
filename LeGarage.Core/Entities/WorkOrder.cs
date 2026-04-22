@@ -9,6 +9,8 @@ namespace LeGarage.Core.Entities
         public int WorkShopId { get; set; }
         [ForeignKey("Vehicle")]
         public int VehicleId { get; set; }
+        [ForeignKey("Invoice")]
+        public int? InvoiceId { get; set; }
         public required string WorkOrderRecord { get; set; }
         public int Mileage { get; set; }
         public required string Status { get; set; }
@@ -21,6 +23,7 @@ namespace LeGarage.Core.Entities
         public Decimal TotalCost { get; set; }
         public WorkShop? WorkShop { get; set; }
         public Vehicle? Vehicle { get; set; }
+        public Invoice? Invoice { get; set; }
         public List<Task> Tasks { get; set; } = new List<Task>();
 
     }

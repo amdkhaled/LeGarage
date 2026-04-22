@@ -15,7 +15,7 @@ namespace LeGarage.Core.Entities
         public string? CompanyId { get; set; }
         public string? CompanyName { get; set; }
         public List<Vehicle> Vehicles { get; set; } = new List<Vehicle>();
-
+        public List<Invoice> Invoices { get; set; } = new List<Invoice>();
 
     }
 }
