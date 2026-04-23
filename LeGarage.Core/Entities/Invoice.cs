@@ -1,8 +1,7 @@
 ﻿using LeGarage.Core.Common;
-using LeGarage.Core.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LeGarage.Core
+namespace LeGarage.Core.Entities
 {
     public class Invoice : BaseEntity
     {

@@ -20,8 +20,10 @@ namespace LeGarage.Core.Entities
         public Decimal TaskTotalCost { get; set; }
         public WorkOrder? WorkOrder { get; set; }
         public Bridge? Bridge { get; set; }
-        public List<PauseRecord> PauseRecords { get; set; } = new List<PauseRecord>();
         public ProvidedService? ProvidedService { get; set; }
+        public List<PauseRecord> PauseRecords { get; set; } = new List<PauseRecord>();
+        public List<TaskExternalServiceUsage> TaskExternalServiceUsage { get; set; } = new List<TaskExternalServiceUsage>();
+        public List<TaskPartUsage> TaskPartUsages { get; set; } = new List<TaskPartUsage>();
 
     }
 }
