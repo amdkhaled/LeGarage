@@ -32,7 +32,7 @@ namespace LeGarage.Core.Entities
         public WorkShop? WorkShop { get; set; }
         public Vehicle? Vehicle { get; set; }
         public Invoice? Invoice { get; set; }
-        public List<Task> Tasks { get; set; } = new List<Task>();
+        public List<Job> Jobs { get; set; } = new List<Job>();
 
     }
 }

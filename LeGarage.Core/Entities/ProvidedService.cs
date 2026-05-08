@@ -20,7 +20,7 @@ namespace LeGarage.Core.Entities
         public decimal MinCharge { get; set; }
         [MaxLength(100)]
         public string? Description { get; set; }
-        public List<Task> Tasks { get; set; } = new List<Task>();
+        public List<Job> Jobs { get; set; } = new List<Job>();
         public ProvidedServiceCategory? ProvidedServiceCategory { get; set; }
     }
 }

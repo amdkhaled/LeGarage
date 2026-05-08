@@ -14,6 +14,6 @@ namespace LeGarage.Core.Entities
         public DateTime EndTime { get; set; }
         [Range(1, int.MaxValue, ErrorMessage = "Pause Duration must be a positive integer.")]
         public int PauseDuration { get; set; }
-        public Task? Task { get; set; }
+        public Job? Job { get; set; }
     }
 }

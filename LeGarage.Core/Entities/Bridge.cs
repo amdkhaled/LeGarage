@@ -12,6 +12,6 @@ namespace LeGarage.Core.Entities
         [Required(ErrorMessage = "CapacityKg is required."), Range(1, int.MaxValue, ErrorMessage = "CapacityKg must be a positive integer.")]
         public required int CapacityKg { get; set; }
         public bool IsAvailable { get; set; } = true;
-        public List<Task> Tasks { get; set; } = new List<Task>();
+        public List<Job> Jobs { get; set; } = new List<Job>();
     }
 }

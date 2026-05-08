@@ -20,7 +20,7 @@ namespace LeGarage.Core.Entities
         public int? Quantity { get; set; }
         [Range(1, float.MaxValue, ErrorMessage = "Cost must be a positive decimal.")]
         public decimal Cost { get; set; }
-        public Task? Task { get; set; }
+        public Job? Job { get; set; }
         public ExternalService? ExternalService { get; set; }
         public Provider? Provider { get; set; }
 

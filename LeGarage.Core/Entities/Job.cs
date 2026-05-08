@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LeGarage.Core.Entities
 {
-    public class Task : BaseEntity
+    public class Job : BaseEntity
     {
         [ForeignKey("WorkOrder")]
         public int WorkOrderId { get; set; }
