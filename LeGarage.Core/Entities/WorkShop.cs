@@ -1,10 +1,13 @@
 ﻿using LeGarage.Core.Common;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LeGarage.Core.Entities
 {
     public class WorkShop : BaseEntity
     {
+        [ForeignKey("Company")]
+        public int CompanyId { get; set; }
 
         [Required(ErrorMessage = "Code is required."), MaxLength(50)]
         public required string Code { get; set; }
@@ -19,5 +22,6 @@ namespace LeGarage.Core.Entities
         [MaxLength(50)]
         public string? OpeningHourse { get; set; }
         public List<WorkOrder> WorkOrders { get; set; } = new List<WorkOrder>();
+        public Company? Company { get; set; }
     }
 }

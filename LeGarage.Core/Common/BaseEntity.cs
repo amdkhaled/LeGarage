@@ -1,11 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LeGarage.Core.Common
 {
     public abstract class BaseEntity
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required(ErrorMessage = "IsActive is required.")]
+
         public bool IsActive { get; set; }
         [MaxLength(500)]
         public string? Notes { get; set; }
